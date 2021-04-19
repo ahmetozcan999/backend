@@ -5,14 +5,13 @@ using System.Text;
 
 namespace Entities.Concrete
 {
-    public class Adresses : IEntity
+    public class OrderDetail :IEntity
     {
         public int Id { get; set; }
-
-        public int UserId { get; set; }
-        public int CityId { get; set; }
-        public char AddressDetail { get; set; }
-        public char PostalCode { get; set; }
+        public int OrderId { get; set; }
+        public int ProductId { get; set; }
+        public int Count { get; set; }
+        public int SalePrice { get; set; }
         public DateTime CreateDate { get; set; }
         public bool Active { get; set; }
     }
